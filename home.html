@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management Portal - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
+
+    <!-- Home Section -->
+    <section class="home-section" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Campus Events Portal</h1>
+            <p>Your gateway to exciting college events, registrations, and updates</p>
+            <a href="#events-gallery" class="cta-button">Explore Events</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>About College Events</h2>
+            <p>
+                Our College Event Management Portal is designed to bring together students, faculty, and the entire campus community. 
+                We organize a diverse range of events throughout the academic year, including technical festivals, cultural nights, 
+                sports championships, career fairs, and much more.
+            </p>
+            <p>
+                Our mission is to create memorable experiences, foster learning, and build a vibrant campus community. 
+                Whether you're interested in technology, arts, sports, or career development, we have something exciting for everyone.
+            </p>
+            <p>
+                Join us in celebrating diversity, innovation, and excellence. Register for events, stay updated with the latest announcements, 
+                and be part of our thriving campus culture.
+            </p>
+        </div>
+    </section>
+
+    <!-- Events Gallery Section -->
+    <section class="gallery-section" id="events-gallery-section">
+        <h2 class="section-title">Featured Events</h2>
+        <p class="section-subtitle">Discover exciting events happening on campus</p>
+        <div id="events-gallery">
+            <!-- Events will be loaded dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-content">
+            <h2>Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Optional) -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I register for an event?</div>
+                <div class="faq-answer">
+                    <p>Simply browse our events page, select the event you're interested in, and click the "Register Now" button. 
+                    You'll be prompted to provide your details, and the registration will be confirmed instantly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is there a registration fee for events?</div>
+                <div class="faq-answer">
+                    <p>Most events are free for students. Some special events or workshops may have a nominal fee, 
+                    which will be clearly mentioned in the event details. All fees are collected on-site during the event.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I cancel my registration?</div>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your registration through your dashboard. However, please note that cancellations 
+                    should be made at least 24 hours before the event date to allow other students to register.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How will I receive event updates?</div>
+                <div class="faq-answer">
+                    <p>Once you register for an event, you'll receive updates via email. You can also check your dashboard 
+                    for the latest information about your registered events.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What if I miss an event I registered for?</div>
+                <div class="faq-answer">
+                    <p>If you're unable to attend an event, please cancel your registration so others can participate. 
+                    Repeated no-shows may affect your ability to register for future events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Require authentication for home page
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof requireAuth === 'function') {
+                requireAuth();
+            }
+            // Initialize form validation when page loads
+            if (typeof initFormValidation === 'function') {
+                initFormValidation('contact-form');
+            }
+        });
+    </script>
+</body>
+</html>

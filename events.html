@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - College Event Management Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
+
+    <!-- Events Page -->
+    <div class="events-page">
+        <div class="events-header">
+            <h1>All Events</h1>
+            <p>Discover and register for exciting campus events</p>
+        </div>
+
+        <!-- Event Filters -->
+        <div class="events-filters">
+            <button class="filter-btn active" data-category="all">All Events</button>
+            <button class="filter-btn" data-category="technical">Technical</button>
+            <button class="filter-btn" data-category="cultural">Cultural</button>
+            <button class="filter-btn" data-category="sports">Sports</button>
+            <button class="filter-btn" data-category="career">Career</button>
+            <button class="filter-btn" data-category="academic">Academic</button>
+            <button class="filter-btn" data-category="entertainment">Entertainment</button>
+        </div>
+
+        <!-- Events Container -->
+        <div id="events-container">
+            <!-- Events will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/events.js"></script>
+    
+    <script>
+        // Require authentication for events page
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof requireAuth === 'function') {
+                requireAuth();
+            }
+        });
+    </script>
+</body>
+</html>
+

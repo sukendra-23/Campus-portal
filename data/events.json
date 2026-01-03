@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "title": "Annual Tech Fest",
+    "description": "Join us for the biggest technology festival of the year featuring coding competitions, tech talks, and innovation showcases.",
+    "date": "2025-03-15",
+    "time": "09:00 AM",
+    "venue": "Main Auditorium",
+    "category": "Technical",
+    "image": "tech-fest.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": 2,
+    "title": "Cultural Night",
+    "description": "A vibrant evening celebrating diverse cultures with music, dance, and performances from students across different backgrounds.",
+    "date": "2025-03-20",
+    "time": "06:00 PM",
+    "venue": "Open Air Theatre",
+    "category": "Cultural",
+    "image": "cultural-night.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": 3,
+    "title": "Sports Championship",
+    "description": "Inter-college sports championship featuring cricket, football, basketball, and athletics competitions.",
+    "date": "2025-03-25",
+    "time": "08:00 AM",
+    "venue": "Sports Complex",
+    "category": "Sports",
+    "image": "sports.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": 4,
+    "title": "Career Fair 2025",
+    "description": "Connect with top recruiters and explore career opportunities. Workshops on resume building and interview skills.",
+    "date": "2025-04-01",
+    "time": "10:00 AM",
+    "venue": "Convention Center",
+    "category": "Career",
+    "image": "career-fair.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": 5,
+    "title": "Science Exhibition",
+    "description": "Showcase of innovative science projects and experiments by students. Open to all science enthusiasts.",
+    "date": "2025-04-05",
+    "time": "11:00 AM",
+    "venue": "Science Block",
+    "category": "Academic",
+    "image": "science-expo.jpg",
+    "status": "upcoming"
+  },
+  {
+    "id": 6,
+    "title": "Music Concert",
+    "description": "An electrifying night of live music performances by student bands and professional artists.",
+    "date": "2025-04-10",
+    "time": "07:00 PM",
+    "venue": "Main Auditorium",
+    "category": "Entertainment",
+    "image": "music-concert.jpg",
+    "status": "upcoming"
+  }
+]
+
